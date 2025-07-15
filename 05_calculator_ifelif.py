@@ -1,13 +1,12 @@
 # making a calculator app
 while True:
     print("-" * 30)
-    print ("This is simple Calculator app")
-    print("This app is created by Govardhan raj")
+    print ("This is simple Calculator app by Govardhan raj")
     print("To exit from calculator type: exit ")
     
     try:    
         num1 = input("Enter first number: ")
-        if num1.lower == 'exit':
+        if num1.lower() == 'exit':
             break
         elif  num1 == "":
             print("Please input a number or type 'exit'")
@@ -15,7 +14,7 @@ while True:
         num1 = float(num1)
 
         num2 = input("Enter second number: ")
-        if num2.lower == 'exit':
+        if num2.lower() == 'exit':
             break
         elif  num2 == "":
             print("Please input a number or type 'exit'")
@@ -23,7 +22,7 @@ while True:
         num2 = float(num2)
         
         op = input("Choose operation (+, -, *, /): ")
-        if op.lower == 'exit':
+        if op.lower() == 'exit':
             break
         elif  op == "":
             print("Choose operation (+, -, *, /): ")
